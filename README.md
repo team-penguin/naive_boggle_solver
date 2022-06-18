@@ -5,3 +5,6 @@
 - score.pl: `1st implementation of the Cube solving algorithm.`
 - score.py: `2nd implementation of the Cube solving algorithm.`
 - words.txt: `Dictionary that comprises the search candidates.`
+
+![3-D Boggle Animation](boggle_animated.png)
+*3-D Boggle Animation*
