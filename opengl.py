@@ -135,8 +135,11 @@ def Cube():
 		glVertex3fv(voxel)
 	glEnd()
 	glColor3f(1.0,0.0,0.0)
-	glEnable(GL_LINE_SMOOTH)
-	glLineWidth(1)
+	glDisable(GL_LINE_SMOOTH)
+	glDisable(GL_BLEND)
+	glDisable(GL_LINE_STIPPLE)
+	glDisable(GL_POINT_SMOOTH)
+	glLineWidth(2.0)
 	glBegin(GL_LINE_STRIP)
 	lock.acquire()
 	for voxel in walkabout_gl:
