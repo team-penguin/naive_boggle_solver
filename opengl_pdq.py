@@ -142,10 +142,8 @@ def find_word(board, word, position, index, walkabout):
 
 	neighborhood = find_neighbors(board, position)
 	for visited in walkabout:
-		try:
+		if visited in neighborhood:
 			del neighborhood[visited]
-		except:
-			pass
 
 	positions = [key for (key,value) in neighborhood.items() if value == next_letter]
 	if positions:
